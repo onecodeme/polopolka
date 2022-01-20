@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "polopolka",
+  "version": "1.0.1",
+  "description": "It's polopoplin",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onecodeme/polopolka.git"
+  },
+  "author": "Polopolka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onecodeme/polopolka/issues"
+  },
+  "homepage": "https://github.com/onecodeme/polopolka#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2"
+  }
+}
