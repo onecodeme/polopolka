@@ -19,9 +19,12 @@ app.get('/', (res, req) => {
 	req.render('index')
 })
 
-app.post('/api/products', (req, res) => {
-	console.log("Nice")
+app.get('/api/products', (req, res) => {
 	res.json(products)
+})
+
+app.get('/easter-egg', (req, res) => {
+	res.write('<h1> Tihon top </h1>')
 })
 
 db.serialize(function () {
@@ -40,7 +43,6 @@ db.serialize(function () {
 			image: row.image
 		}
 
-		console.log(product)
 		products.push(product)
 	})
 

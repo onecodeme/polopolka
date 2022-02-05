@@ -6,6 +6,8 @@ const App = new Vue ({
         }
     },
     async mounted() {
-
+        fetch("http://localhost/api/products")
+            .then(response => response.json())
+            .then(data => (this.products = data));
     }
 })
